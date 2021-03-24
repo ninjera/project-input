@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Acceso</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">Usuario</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+
+    <div class="ion-text-end ion-padding">
+      <a class="small-text">¿Olvido su contraseña?</a>
+    </div>
+
+    <ion-row>
+      <ion-col>
+        <ion-button
+          type="submit"
+          color="primary"
+          expand="block"
+          class="ion-text-capitalize"
+          >Login</ion-button
+        >
+      </ion-col>
+    </ion-row>
+  </form>
+
+  <p class="ion-text-center">¿No posee una Cuenta?</p>
+  <ion-button expand="block" color="danger" class="ion-text-capitalize"
+    >Registrarse Gratis</ion-button
+  >
+</ion-content>
